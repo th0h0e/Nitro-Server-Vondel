@@ -1,5 +1,5 @@
-import { defineHandler } from "nitro/h3"
+import { defineEventHandler } from "h3"
 
-export default defineHandler((event) => {
+export default defineEventHandler((event) => {
   return { message: "Hello from API!" };
 });

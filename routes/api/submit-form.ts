@@ -1,6 +1,6 @@
-import { defineHandler, readBody, setResponseHeaders } from "nitro/h3";
+import { defineEventHandler, readBody, setResponseHeaders } from "h3";
 
-export default defineHandler(async (event) => {
+export default defineEventHandler(async (event) => {
   console.log("=== INCOMING REQUEST ===");
   console.log("Method:", event.method);
   console.log("Headers:", event.headers);
