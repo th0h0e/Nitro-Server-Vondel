@@ -3,7 +3,8 @@
   "scripts": {
     "build": "nitro build",
     "dev": "nitro dev",
-    "preview": "npx srvx --prod .output/"
+    "preview": "npx srvx --prod .output/",
+    "postinstall": "pnpm rebuild oxc-transform"
   },
   "devDependencies": {
     "nitro": "latest",
