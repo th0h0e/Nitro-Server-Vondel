@@ -1,5 +1,5 @@
-import { defineConfig } from "nitro"
+import { defineNitroConfig } from "nitropack/config"
 
-export default defineConfig({
-  serverDir: './',
+export default defineNitroConfig({
+  srcDir: './',
 });
