@@ -3,11 +3,13 @@
   "scripts": {
     "build": "nitro build",
     "dev": "nitro dev",
-    "preview": "npx srvx --prod .output/",
-    "postinstall": "pnpm rebuild oxc-transform"
+    "preview": "npx srvx --prod .output/"
   },
   "devDependencies": {
     "nitro": "latest",
     "rolldown": "latest"
+  },
+  "optionalDependencies": {
+    "@oxc-transform/binding-linux-x64-gnu": "^0.96.0"
   }
 }
