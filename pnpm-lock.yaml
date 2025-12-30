@@ -14,6 +14,10 @@ importers:
       rolldown:
         specifier: latest
         version: 1.0.0-beta.57
+    optionalDependencies:
+      '@oxc-transform/binding-linux-x64-gnu':
+        specifier: ^0.96.0
+        version: 0.96.0
 
 packages:
 
