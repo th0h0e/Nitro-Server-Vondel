@@ -6,7 +6,4 @@ cmd = 'node .output/server/index.mjs'
 
 [variables]
 NODE_ENV = 'production'
-NIXPACKS_NODE_VERSION = '23'
 NITRO_BUILDER = 'rolldown'
-npm_config_supportedArchitectures_os = 'linux'
-npm_config_supportedArchitectures_cpu = 'x64'
