@@ -1,5 +1,5 @@
 [phases.build]
-cmds = ['npm install', 'npm run build']
+cmds = ['pnpm install', 'pnpm run build']
 
 [start]
 cmd = 'node .output/server/index.mjs'
@@ -7,3 +7,5 @@ cmd = 'node .output/server/index.mjs'
 [variables]
 NODE_ENV = 'production'
 NITRO_BUILDER = 'rolldown'
+npm_config_supportedArchitectures_os = 'linux'
+npm_config_supportedArchitectures_cpu = 'x64'
