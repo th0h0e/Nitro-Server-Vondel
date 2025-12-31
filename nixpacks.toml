@@ -1,5 +1,5 @@
 [phases.build]
-cmds = ['pnpm install', 'pnpm build']
+cmds = ['npm install -g npm@latest', 'npm install', 'npm run build']
 
 [start]
 cmd = 'node .output/server/index.mjs'
