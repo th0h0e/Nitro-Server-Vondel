@@ -1,8 +1,9 @@
+[phases.setup]
+nixPkgs = ['bun']
+
 [start]
-cmd = 'node .output/server/index.mjs'
+cmd = 'bun .output/server/index.mjs'
 
 [variables]
 NODE_ENV = 'production'
 NITRO_BUILDER = 'rolldown'
-npm_config_supportedArchitectures_os = 'linux'
-npm_config_supportedArchitectures_cpu = 'x64'
