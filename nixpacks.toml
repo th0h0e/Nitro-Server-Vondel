@@ -1,8 +1,5 @@
-[phases.install]
-cmds = ['npm install -g npm@latest', 'npm install']
-
 [phases.build]
-cmds = ['npm run build']
+cmds = ['npm install', 'npm run build']
 
 [start]
 cmd = 'node .output/server/index.mjs'
