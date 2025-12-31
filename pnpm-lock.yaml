@@ -11,6 +11,9 @@ importers:
       nitro:
         specifier: ^3.0.1-alpha.1
         version: 3.0.1-alpha.1(rolldown@1.0.0-beta.58)
+      oxc-transform:
+        specifier: ^0.96.0
+        version: 0.96.0
       rolldown:
         specifier: ^1.0.0-beta.57
         version: 1.0.0-beta.58
