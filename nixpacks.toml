@@ -1,12 +1,15 @@
+[phases.install]
+cmds = ['npm install -g npm@latest', 'npm install']
+
 [phases.build]
-cmds = ['npm install -g npm@latest', 'npm install', 'npm run build']
+cmds = ['npm run build']
 
 [start]
 cmd = 'node .output/server/index.mjs'
 
 [variables]
 NODE_ENV = 'production'
-NIXPACKS_NODE_VERSION = '22'
+NIXPACKS_NODE_VERSION = '23'
 NITRO_BUILDER = 'rolldown'
 npm_config_supportedArchitectures_os = 'linux'
 npm_config_supportedArchitectures_cpu = 'x64'
