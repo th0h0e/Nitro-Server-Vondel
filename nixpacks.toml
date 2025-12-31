@@ -6,3 +6,5 @@ cmd = 'node .output/server/index.mjs'
 
 [variables]
 NODE_ENV = 'production'
+npm_config_supportedArchitectures_os = 'linux'
+npm_config_supportedArchitectures_cpu = 'x64'
