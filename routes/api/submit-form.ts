@@ -44,20 +44,21 @@ export default defineHandler(async (event) => {
     }
 
     // Validate required fields
-    if (!body.name || !body.email) {
+    if (!body.firstName || !body.lastName || !body.email || !body.phone) {
       return {
         success: false,
-        error: "Name and email are required fields",
+        error: "Voornaam, achternaam, e-mail en telefoonnummer zijn verplicht",
       };
     }
 
     // Prepare the data for Webflow CMS
     const cmsData = {
       fieldData: {
-        name: body.name,
+        name: `${body.firstName} ${body.lastName}`,
+        "first-name": body.firstName,
+        "last-name": body.lastName,
         email: body.email,
-        phone: body.phone || "",
-        message: body.message || "",
+        phone: body.phone,
       }
     };
 
